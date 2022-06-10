@@ -70,6 +70,11 @@ typedef struct private_led_structure_definition *led;
 
 ////
 
+// endpoints for constructor and destructor for led datatype
+// TODO implement demo logic in the internal implementation (led_module.c)
+extern led constructLED();
+extern void destructLED(led);
+
 // usual endpoint definitions
 extern bool turnOnLED(led);
 extern bool turnOffLED(led);
