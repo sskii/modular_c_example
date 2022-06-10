@@ -16,9 +16,10 @@ If you want a full overview, read the article. If you want a demo, read the code
 - This file should include its own header
 - This file should declare and define any internal ('private') methods and variables with the `static` keyword
 - This file should define the interface ('public') methods and variables declared in the header
-- (Tip) Declare the variables at the top, then the `static` internal methods, then the interface methods, in that order, to avoid a good deal of the define-something-before-using-it errors.
 
 And really, that's about it for a bare-bones modular project. With discipline, this should bring all the OO benefits of encapsulation without the unnecessary headroom requirements.
+
+(Tip) Declare the variables at the top, then the `static` internal methods, then the interface methods, in that order, to avoid a good deal of the define-something-before-using-it errors.
 
 ## Expected errors
 
