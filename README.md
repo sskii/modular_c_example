@@ -13,7 +13,7 @@ If you want a full overview, read the article. If you want a demo, read the code
 - This file should define any 'public' methods and variables using the `extern` keyword
 
 ### Create a source file that defines the implementation
-- This file should include its own header
+- This file should `#include` its own header (as the last inclusion)
 - This file should declare and define any internal ('private') methods and variables with the `static` keyword
 - This file should define the interface ('public') methods and variables declared in the header
 
