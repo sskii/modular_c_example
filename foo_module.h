@@ -43,7 +43,7 @@
 // Without these, the compiler would complain about us calling a method before it is defined. With this, it trusts
 // that the linker will find the methods.
 extern int publicVariable;
-extern void publicFunction;
+extern void publicFunction(int*);
 
 //* NB when you're actually writing a module's header (interface) file, substitute the general explanatory comments
 //* for something implementation specific. This will mean that you have the advantage of your IDE providing
