@@ -27,4 +27,4 @@ In the header files, it is strongly recommended to use `#define`s to change the 
 - You will get a linker error if you forget to include a module's header file somewhere
 - You should (with luck) get a compiler error if;
 	* you call a module's method with the wrong parameter
-	* your definition for the implementation of a module's method does not match what the interface promises it should be
+	* your definition for the implementation of a module's interface method does not match what the interface promises it should be

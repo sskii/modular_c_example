@@ -27,7 +27,7 @@
  * @brief The main endpoint to start the program
  * (The only required module endpoint for a main module)
  */
-void main()
+int main()
 {
 	// do anything that you would normally do in C
 	int stackVariable = 3;
@@ -35,4 +35,6 @@ void main()
 	// as well as confidently interface with modules
 	publicVariable = 4;
 	publicFunction(&stackVariable);
+
+	return 0;
 }
