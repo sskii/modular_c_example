@@ -33,7 +33,7 @@
 #define publicFunction foo_publicFunction
 // OPTIONAL: call these foo_publicVariable and foo_publicFunction, so that it's always obvious in source code
 // the module from which a function is used. Then change these lines to something like,
-// #define foo__publicVariable foo_publicVariable
+// #define foo_publicVariable foo__publicVariable
 // This could make larger projects with more niche modules more readable. The only critical thing with these
 // defines is that they change the name of the module (to something that is guaranteed to be unique)!
 
