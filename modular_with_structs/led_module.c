@@ -56,7 +56,7 @@ led constructLED() {
 }
 
 void destructLED(led target) {
-	free((*private_led_structure_definition)target);
+	free(target);
 }
 
 bool turnOnLED(led l)
