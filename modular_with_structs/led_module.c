@@ -49,6 +49,16 @@ static void setLEDState(struct private_led_structure_definition *l, bool newStat
 
 //* Define interface endpoints
 
+led constructLED() {
+	// I have not tested or even double-checked this. You should before you copy this style of constructor.
+	private_led_structure_definition newLED = malloc(sizeof private_led_structure_defition);
+	return &newLED;
+}
+
+void destructLED(led target) {
+	free((*private_led_structure_definition)target);
+}
+
 bool turnOnLED(led l)
 {
 
@@ -67,4 +77,9 @@ bool turnOffLED(led l)
 	setLEDState(l, false);
 
 	return false;
+}
+
+bool setPinForLED(led target, int pinNumber) {
+	target->pinNumber = pinNumber;
+	return true;
 }
