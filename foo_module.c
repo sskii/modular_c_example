@@ -28,8 +28,10 @@
 
 int publicVariable;
 static int privateVariable;
-// `static` datatype ensures privateVariable is only visible to code in this
-// file this means that it can only be accessed from within the module!
+//! `static` datatype ensures privateVariable is only visible to code in this
+//! file this means that it can only be accessed from within the module!
+// TODO this is very likely incorrect. No need to keyword the variable as
+// it was never externed
 
 /**
  * @brief A function that is internal to a module and cannot be accessed from
